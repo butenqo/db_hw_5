@@ -59,8 +59,9 @@ def find_client(cur, **kwargs):
     print(cur.fetchall())
 
 if __name__ == "__main__":
-    with psycopg2.connect(database="clients_db", user="postgres", password="215047Qq") as conn:
+    with psycopg2.connect(database="clients_db", user="postgres", password="") as conn:
         with conn.cursor() as cur:
+
             pass
             
 conn.close()
